@@ -1,0 +1,3 @@
+[submodule "XTTS-v2"]
+	path = XTTS-v2
+	url = https://huggingface.co/coqui/XTTS-v2
