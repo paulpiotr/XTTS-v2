@@ -1,0 +1,44 @@
+<h2 class="content-block">TTS to file</h2>
+
+<div class="content-block dx-card responsive-paddings">
+  <div class="form-avatar">
+    <img src="https://store-images.s-microsoft.com/image/apps.51365.14545378235299215.f0b81429-b8f1-4ef8-b087-b5965a895141.7a667625-a545-4206-9f2a-acd6ca50e45d?h=210" />
+  </div>
+  <span>{{formData.Notes}}</span>
+</div>
+
+<div class="content-block dx-card responsive-paddings">
+  <form (submit)="onSubmit($event)">
+    <dx-form id="form" [formData]="formData" labelLocation="top" [colCountByScreen]="colCountByScreen"
+      [disabled]="loading">
+      <dxi-item itemType="group" caption="Config" [colSpan]="4">
+        <dxi-item dataField="Language" editorType="dxTextBox">
+          <dxi-validation-rule type="required" message="Language is required"></dxi-validation-rule>
+          <dxo-label [visible]="true"></dxo-label>
+        </dxi-item>
+      </dxi-item>
+      <dxi-item itemType="group" caption="Text" [colSpan]="4">
+        <dxi-item dataField="Text" editorType="dxTextArea">
+          <dxi-validation-rule type="required" message="Text is required"></dxi-validation-rule>
+          <dxo-label [visible]="false"></dxo-label>
+        </dxi-item>
+      </dxi-item>
+      <dxi-item itemType="group" caption="Apply" [colSpan]="4">
+        <dxi-item itemType="button">
+          <dxo-button-options width="100%" type="default" [useSubmitBehavior]="true" [template]="'submitTemplate'">
+          </dxo-button-options>
+        </dxi-item>
+      </dxi-item>
+      <ng-container *dxTemplate="let item of 'submitTemplate'">
+        <div>
+          <span class="dx-button-text">
+            <ng-container *ngIf="loading; else notLoading">
+              <dx-load-indicator width="24px" height="24px" [visible]="true"></dx-load-indicator>
+            </ng-container>
+            <ng-template #notLoading>TTS to file</ng-template>
+          </span>
+        </div>
+      </ng-container>
+    </dx-form>
+  </form>
+</div>

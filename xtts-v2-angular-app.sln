@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "xtts-v2-python-api", "xtts-v2-python-api\xtts-v2-python-api.pyproj", "{5F835D80-26BC-43C5-BE61-AF2951696376}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "xtts-v2-devextreme-angular-app", "xtts-v2-devextreme-angular-app\xtts-v2-devextreme-angular-app.esproj", "{6EA8BF54-A9C3-4881-B0B8-9AED3E22A056}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!Solution Items", "!Solution Items", "{25EAF9F4-78C8-4AC9-B811-CADE7CAC6B32}"
+	ProjectSection(SolutionItems) = preProject
+		XTTS-v2\.gitattributes = XTTS-v2\.gitattributes
+		XTTS-v2\config.json = XTTS-v2\config.json
+		XTTS-v2\hash.md5 = XTTS-v2\hash.md5
+		XTTS-v2\LICENSE.txt = XTTS-v2\LICENSE.txt
+		XTTS-v2\mel_stats.pth = XTTS-v2\mel_stats.pth
+		XTTS-v2\README.md = XTTS-v2\README.md
+		XTTS-v2\vocab.json = XTTS-v2\vocab.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F835D80-26BC-43C5-BE61-AF2951696376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F835D80-26BC-43C5-BE61-AF2951696376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA8BF54-A9C3-4881-B0B8-9AED3E22A056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA8BF54-A9C3-4881-B0B8-9AED3E22A056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA8BF54-A9C3-4881-B0B8-9AED3E22A056}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6EA8BF54-A9C3-4881-B0B8-9AED3E22A056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA8BF54-A9C3-4881-B0B8-9AED3E22A056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA8BF54-A9C3-4881-B0B8-9AED3E22A056}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {107D4AEC-C14D-4BEC-985B-7440E995B5D6}
+	EndGlobalSection
+EndGlobal
